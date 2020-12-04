@@ -25,6 +25,7 @@ function Header() {
 
     tempSpan.classList.add('temp');
     dateSpan.classList.add('date');
+    header.classList.add('header');
 
     headerContainer.appendChild(header);
     header.appendChild(dateSpan);
