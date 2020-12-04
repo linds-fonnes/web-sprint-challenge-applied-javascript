@@ -19,11 +19,12 @@ function Header() {
     const lambdaTimes = document.createElement('h1');
     const tempSpan = document.createElement('span');
 
-    dateSpan.classList.add('date');
     lambdaTimes.textContent = 'Lambda Times';
-    tempSpan.classList.add('temp');
     dateSpan.textContent = 'MARCH 28, 2020';
     tempSpan.textContent = '98°';
+
+    tempSpan.classList.add('temp');
+    dateSpan.classList.add('date');
 
     headerContainer.appendChild(header);
     header.appendChild(dateSpan);
@@ -34,5 +35,4 @@ function Header() {
     return header;
 }
 
-// const headerContainer = document.querySelector('.header-container');
 headerContainer.appendChild(Header());
